@@ -1,4 +1,4 @@
-@Smoke
+@smoke
 Feature: Dice project
 
 Scenario: Dice Login Test

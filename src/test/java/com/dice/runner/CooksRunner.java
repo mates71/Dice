@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		
 		glue="com/dice/step_definations",
 		
-		tags="@Smoke",
+		tags="@smoke",
 		
 		dryRun=false
 		
