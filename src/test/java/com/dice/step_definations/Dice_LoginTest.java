@@ -3,8 +3,9 @@ package com.dice.step_definations;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
-import org.junit.Ignore;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import com.dice.pages.LoginPage;
 import com.dice.utilities.ConfigurationReader;
@@ -34,14 +35,14 @@ public class Dice_LoginTest {
 	@When("^I fill my credantial$")
 	public void i_fill_my_credantial() throws Throwable {
 		
-		/*JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(1161, 23)", "");
-		Thread.sleep(3000);*/
-		//String img="//img[@src='https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCzt9DbDRABGAEyCBLFY46ZaTTa']";
-	/*	
+	//	JavascriptExecutor js=(JavascriptExecutor)driver;
+		//js.executeScript("window.scrollBy(1161, 23)", "");
+		/*Thread.sleep(3000);
+		String img="//img[@src='https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCzt9DbDRABGAEyCBLFY46ZaTTa']";
+		
 		WebDriverWait wait=new WebDriverWait(driver, 70);
-		wait.until(ExpectedConditions.invisibilityOfElementLocated((By) driver.findElement(By.xpath("//img[@src='https://tpc.googlesyndication.com/pagead/imgad?id=CICAgKCzt9DbDRABGAEyCBLFY46ZaTTa']"))));
-*/
+		wait.until(ExpectedConditions.elementToBeClickable(loginPage.bannerClose)).click();;
+		*/
 		loginPage.bannerClose.click();
 		Thread.sleep(1000);
 		loginPage.searchJob.sendKeys(ConfigurationReader.getProperty("job"));
@@ -59,7 +60,7 @@ public class Dice_LoginTest {
 		loginPage.sortDate.click();
 	}
 	
-	@Ignore
+
 	@Then("^I able to see my account$")
 	public void i_able_to_see_my_account() throws Throwable {
 
@@ -68,6 +69,21 @@ public class Dice_LoginTest {
 		loginPage.email.sendKeys(ConfigurationReader.getProperty("email"));
 		loginPage.psw.sendKeys(ConfigurationReader.getProperty("password"));
 		loginPage.signBtn.click();
+		
+		Thread.sleep(3000);
+		loginPage.searchYes.click();
+		
+		
+		Thread.sleep(3000);
+		loginPage.noSearchable.click();
+		WebElement noSearch=driver.findElement(By.xpath("//input[@value='2-Too many phone calls from recruiters.']"));
+		noSearch.isSelected();
+		
+		Thread.sleep(3000);
+		loginPage.radioNOsearch.click();
+		
+		loginPage.NotSearhOk.click();
+		
 		
 		System.out.println("I am on the my account? "+loginPage.img.isDisplayed());
 		

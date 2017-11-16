@@ -55,6 +55,25 @@ public class LoginPage {
 	public WebElement img;
 	
 	
+	@FindBy(xpath="//button[@id='searchablebtndashboard']")
+	public WebElement searchYes;
+	
+	@FindBy(xpath="//div[@class='toggle-switch-label-off ng-binding']")
+	public WebElement noSearchable;
+	
+	
+	@FindBy(xpath="//input[@value='2-Too many phone calls from recruiters.']")
+	public WebElement radioNOsearch;
+	
+	
+	
+	@FindBy(xpath="//span[.=', Not Searchable']")
+	public WebElement NotSearhOk;
+	
+	
+	
+	
+	
 	
 	
 	
