@@ -43,7 +43,7 @@
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
 					<includes>
-						<include>**/*Runner.java</include>
+						<include>**/*CukesRunner.java</include>
 						<include>**/*FailedScenarios.java</include>
 					</includes>
 				</configuration>

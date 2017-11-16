@@ -25,6 +25,6 @@ import cucumber.api.junit.Cucumber;
 
 
 
-public class CooksRunner {
+public class CukesRunner {
 
 }
