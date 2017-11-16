@@ -26,7 +26,7 @@ public class Dice_LoginTest {
 		//System.setProperty("webdriver.chrome.driver", "/Users/musaates/Documents/Libraries/drivers");
 		Driver.getInstance().get(ConfigurationReader.getProperty("url"));
 		Driver.getInstance().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Driver.getInstance().manage().window().maximize();
+		//Driver.getInstance().manage().window().maximize();
 		
 		Assert.assertEquals(title, Driver.getInstance().getTitle());
 
@@ -71,7 +71,7 @@ public class Dice_LoginTest {
 		loginPage.signBtn.click();
 		
 		Thread.sleep(3000);
-		loginPage.searchYes.click();
+		//loginPage.searchYes.click();
 		
 		
 		Thread.sleep(3000);
