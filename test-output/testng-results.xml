@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15662" started-at="2017-11-20T03:14:01Z" finished-at="2017-11-20T03:14:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15662" started-at="2017-11-20T03:14:01Z" finished-at="2017-11-20T03:14:16Z">
+      <class name="com.dice.step_definations.DiceTestNG">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dice.step_definations.DiceTestNG@6d4b1c02]" name="setUp" is-config="true" duration-ms="5250" started-at="2017-11-19T22:14:01Z" finished-at="2017-11-19T22:14:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.dice.step_definations.DiceTestNG@6d4b1c02]" name="loginTest" duration-ms="10400" started-at="2017-11-19T22:14:06Z" finished-at="2017-11-19T22:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.dice.step_definations.DiceTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
